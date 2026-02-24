@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gunn | Portfolio</title>
+    <meta
+      name="description"
+      content="Gunn (Gunratan Kaur) — Web & UI Developer | Automation & Systems Integrations | Data-aware Builder"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body class="bg-app text-app">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-blur border-bottom border-app">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#home">
+          <span class="brand-dot me-2"></span>Gunn
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="d-lg-flex ms-lg-3 mt-3 mt-lg-0 gap-2">
+            <a class="btn btn-outline-light btn-sm" href="#projects">View Projects</a>
+            <a class="btn btn-accent btn-sm" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="section pt-5">
+      <div class="container py-4 py-lg-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <div class="reveal">
+              <p class="text-muted-app mb-2">
+                <span class="pill">Preferred name: Gunn</span>
+                <span class="ms-2 text-muted-app small">Gunratan Kaur · Barrie, Ontario</span>
+              </p>
+
+              <h1 class="display-5 fw-bold lh-tight mb-3">
+                <span id="typed"></span>
+              </h1>
+
+              <p class="lead text-muted-app mb-4">
+                I build accessible, responsive, high-performing web experiences and reliable workflows —
+                from UI components and forms to API integrations, testing, troubleshooting, and documentation.
+                Experience across JavaScript, PHP (Laravel), SQL, and workflow automation (Zapier, n8n, REST APIs).
+              </p>
+
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="chip">Responsive UI</span>
+                <span class="chip">Accessibility mindset (AODA/WCAG)</span>
+                <span class="chip">JavaScript / Laravel / SQL</span>
+                <span class="chip">Zapier / n8n / REST APIs</span>
+                <span class="chip">Testing & troubleshooting</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-accent" href="#projects">
+                  <i class="bi bi-grid-3x3-gap me-2"></i>Explore Projects
+                </a>
+                <a class="btn btn-outline-light" href="#contact">
+                  <i class="bi bi-send me-2"></i>Let’s Connect
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-app reveal">
+              <div class="card-body">
+                <h2 class="h5 fw-semibold mb-3">Target Roles</h2>
+                <ul class="list-unstyled mb-0 text-muted-app">
+                  <li class="mb-2"><i class="bi bi-check2 me-2"></i>Web & UI Specialist / Web Developer</li>
+                  <li class="mb-2"><i class="bi bi-check2 me-2"></i>Automation / Systems Integrations</li>
+                  <li class="mb-2"><i class="bi bi-check2 me-2"></i>Data Analyst / Data-aware Developer</li>
+                </ul>
+
+                <hr class="border-app" />
+
+                <div class="d-grid gap-2">
+                  <a class="btn btn-outline-light" href="#journey">
+                    <i class="bi bi-briefcase me-2"></i>View Journey
+                  </a>
+                  <a class="btn btn-outline-light" href="#skills">
+                    <i class="bi bi-lightning-charge me-2"></i>View Skills
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container py-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+          <div class="reveal">
+            <h2 class="h1 fw-bold mb-1">Projects</h2>
+            <p class="text-muted-app mb-0">Projects first. Click any card for details.</p>
+          </div>
+
+          <div class="reveal d-flex flex-wrap gap-2">
+            <button class="btn btn-sm btn-filter active" data-filter="all">All</button>
+            <button class="btn btn-sm btn-filter" data-filter="webui">Web/UI</button>
+            <button class="btn btn-sm btn-filter" data-filter="automation">Automation</button>
+            <button class="btn btn-sm btn-filter" data-filter="data">Data</button>
+            <button class="btn btn-sm btn-filter" data-filter="fullstack">Full-stack</button>
+          </div>
+        </div>
+
+        <!-- HERO PROJECTS -->
+        <div class="row g-4 mb-4">
+          <!-- GrizzMate -->
+          <div class="col-lg-6">
+            <article
+              class="card card-app project-card reveal"
+              data-tags="webui fullstack"
+              role="button"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal"
+              data-title="GrizzMate — Campus-Restricted Social Application"
+              data-subtitle="Secure web app restricted to verified Georgian College users (domain-based access control)."
+              data-tech="JavaScript, jQuery, HTML/CSS, (MongoDB if applicable), Git"
+              data-bullets="Email-based authentication + domain-restricted verification|Robust form validation, error handling, and access control|Responsive UI flows focused on usability and data integrity|Testing & debugging to improve reliability"
+              data-github="(placeholder)"
+              data-live="(optional placeholder)"
+            >
+              <img
+                src="img/grizzmatelogo.png"
+                class="card-img-top project-img logo-fit"
+                alt="GrizzMate logo"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h4 fw-semibold mb-1">GrizzMate</h3>
+                    <p class="text-muted-app mb-3">
+                      Campus-restricted social app with verification, validation, and secure flows.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="chip chip-soft">Hero</span>
+                      <span class="chip chip-soft">Web/UI</span>
+                      <span class="chip chip-soft">Full-stack</span>
+                    </div>
+                  </div>
+                  <div class="icon-badge">
+                    <i class="bi bi-shield-lock"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer border-top border-app text-muted-app small d-flex justify-content-between">
+                <span>View details</span>
+                <span><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Digital Portfolio -->
+          <div class="col-lg-6">
+            <article
+              class="card card-app project-card reveal"
+              data-tags="webui"
+              role="button"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal"
+              data-title="Digital Portfolio — Responsive Single-Page Portfolio"
+              data-subtitle="The portfolio you’re building now: lightweight, dark-modern, responsive, and animated."
+              data-tech="HTML, CSS, JavaScript, Bootstrap, IntersectionObserver, Typed.js, GitHub Pages"
+              data-bullets="Sticky navbar with active section highlighting|Project cards with filters + modal details|Scroll reveal, hover micro-interactions, typing headline|Performance-friendly design and accessibility-friendly UI patterns"
+              data-github="(placeholder)"
+              data-live="(placeholder GitHub Pages link)"
+              data-notes="This is Project A (current build). Replace placeholders with your real GitHub + Pages link when ready."
+            >
+              <img
+                src="img/DigitalPortfolio.png"
+                class="card-img-top project-img"
+                alt="Digital portfolio preview"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h4 fw-semibold mb-1">Digital Portfolio</h3>
+                    <p class="text-muted-app mb-3">
+                      Dark-modern single page with smooth, professional animations.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="chip chip-soft">Hero</span>
+                      <span class="chip chip-soft">Web/UI</span>
+                    </div>
+                  </div>
+                  <div class="icon-badge">
+                    <i class="bi bi-stars"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer border-top border-app text-muted-app small d-flex justify-content-between">
+                <span>View details</span>
+                <span><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- OTHER PROJECTS -->
+        <div class="row g-4">
+          <!-- Currency Exchange -->
+          <div class="col-md-6 col-lg-4">
+            <article
+              class="card card-app project-card reveal"
+              data-tags="fullstack data webui"
+              role="button"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal"
+              data-title="Currency Exchange Web Application"
+              data-subtitle="Full-stack app for currency conversion with CRUD features and data validation."
+              data-tech="PHP (Laravel), SQL, JavaScript, AJAX, Bootstrap"
+              data-bullets="API-based currency conversion (if applicable)|CRUD with secure validation and error handling|SQL query optimization for performance and reliability|Responsive UI with Bootstrap components"
+              data-github="(placeholder)"
+              data-live="(optional placeholder)"
+              data-notes="If no live demo, screenshots/GIF are enough."
+            >
+              <img
+                src="img/CurrencyExchange.webp"
+                class="card-img-top project-img"
+                alt="Currency exchange app preview"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h5 fw-semibold mb-1">Currency Exchange</h3>
+                    <p class="text-muted-app mb-3">Laravel + SQL + AJAX + responsive UI.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="chip chip-soft">Full-stack</span>
+                      <span class="chip chip-soft">Data</span>
+                    </div>
+                  </div>
+                  <div class="icon-badge">
+                    <i class="bi bi-currency-exchange"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer border-top border-app text-muted-app small d-flex justify-content-between">
+                <span>View details</span>
+                <span><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Automation Workflows (NO LINKS) -->
+          <div class="col-md-6 col-lg-4">
+            <article
+              class="card card-app project-card reveal"
+              data-tags="automation data"
+              role="button"
+              tabindex="0"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal"
+              data-title="Automation Workflows — Zapier / n8n Integrations"
+              data-subtitle="Workflow automations integrating forms, email systems, and internal databases."
+              data-tech="Zapier, n8n, REST APIs, Excel, JavaScript/jQuery"
+              data-bullets="Integrated web forms, email systems, and internal databases using Zapier and n8n|Configured automation triggers to improve workflow reliability and data accuracy|Performed troubleshooting and root-cause analysis on failed workflows|Cleaned and validated datasets to support automation-based reporting|Documented workflows for maintainability and stakeholder handoff"
+              data-github=""
+              data-live=""
+              data-notes="Note: Automation workflows were implemented within internal company systems and cannot be shared publicly. This case study summarizes the integration approach, troubleshooting process, and documentation practices used."
+            >
+              <img
+                src="img/Automation.jpg"
+                class="card-img-top project-img"
+                alt="Automation workflows case study preview"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start gap-3">
+                  <div>
+                    <h3 class="h5 fw-semibold mb-1">Automation Workflows</h3>
+                    <p class="text-muted-app mb-3">Integrations + reliability + data accuracy.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="chip chip-soft">Automation</span>
+                      <span class="chip chip-soft">Data</span>
+                      <span class="chip chip-soft">Case Study</span>
+                    </div>
+                  </div>
+                  <div class="icon-badge">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer border-top border-app text-muted-app small d-flex justify-content-between">
+                <span>View details</span>
+                <span><i class="bi bi-arrow-right"></i></span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Placeholder -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-2">Add another project</h3>
+                <p class="text-muted-app mb-3">
+                  Optional: a UI clone, component library, dashboard, or CMS demo.
+                </p>
+                <ul class="text-muted-app small mb-0">
+                  <li>UI clone (accessible + responsive)</li>
+                  <li>Mini dashboard (SQL/Excel → chart)</li>
+                  <li>CMS demo (WordPress sandbox)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container py-5">
+        <div class="reveal mb-4">
+          <h2 class="h1 fw-bold mb-1">Skills</h2>
+          <p class="text-muted-app mb-0">Aligned to Web/UI + automation + data support work.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-window me-2"></i>Web & UI</h3>
+                <ul class="text-muted-app mb-0">
+                  <li>HTML, CSS, JavaScript, jQuery</li>
+                  <li>Responsive layouts</li>
+                  <li>Reusable UI components</li>
+                  <li>Forms + validation</li>
+                  <li>Accessibility mindset (AODA/WCAG)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-plug me-2"></i>CMS & Integrations</h3>
+                <ul class="text-muted-app mb-0">
+                  <li>CMS concepts (multi-author, permissions)</li>
+                  <li>REST APIs + integrations</li>
+                  <li>Embedding forms/tools</li>
+                  <li>Documentation + handoff</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-bug me-2"></i>Testing & Performance</h3>
+                <ul class="text-muted-app mb-0">
+                  <li>Debugging & troubleshooting</li>
+                  <li>Cross-browser checks</li>
+                  <li>Performance basics</li>
+                  <li>Clean, maintainable UI patterns</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3"><i class="bi bi-bar-chart me-2"></i>Data & Analytics</h3>
+                <ul class="text-muted-app mb-0">
+                  <li>SQL + query logic</li>
+                  <li>Excel cleaning & validation</li>
+                  <li>Data accuracy mindset</li>
+                  <li>Reporting support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+      <div class="container py-5">
+        <div class="reveal mb-4">
+          <h2 class="h1 fw-bold mb-1">Professional Journey</h2>
+          <p class="text-muted-app mb-0">Focused on web, automation, support, and collaboration.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+             <div class="card card-app experience-card">
+            <div class="card card-app">
+              <div class="card-body">
+                <div class="d-flex flex-wrap justify-content-between gap-2">
+                  <h3 class="h5 fw-semibold mb-0">Automation Intern (Co-op) — Scispot</h3>
+                  <span class="text-muted-app small">May 2024 – Aug 2024 · Kitchener, ON</span>
+                </div>
+                <ul class="text-muted-app mt-3 mb-0">
+                  <li>Built and supported automation workflows integrating web forms, email systems, and internal databases</li>
+                  <li>Used Zapier and n8n to improve workflow reliability and data accuracy</li>
+                  <li>Developed and debugged JavaScript/jQuery forms with client-side validation</li>
+                  <li>Performed troubleshooting and root-cause analysis on workflow/data issues</li>
+                  <li>Cleaned and validated datasets in Excel for automation triggers and reporting</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+        </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="card card-app">
+            <div class="card card-app experience-card">
+              <div class="card-body">
+                <div class="d-flex flex-wrap justify-content-between gap-2">
+                  <h3 class="h5 fw-semibold mb-0">Software Intern (Co-op) — Bebo Technologies</h3>
+                  <span class="text-muted-app small">May 2024 – Aug 2024</span>
+                </div>
+                <ul class="text-muted-app mt-3 mb-0">
+                  <li>Developed and supported web-based business applications using PHP (Laravel) and SQL</li>
+                  <li>Implemented CRUD functionality with secure validation and data handling</li>
+                  <li>Optimized SQL queries to improve database performance and reliability</li>
+                  <li>Supported environment configuration and application troubleshooting</li>
+                  <li>Collaborated using Git in Agile workflows</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="card card-app experience-card"> 
+              <div class="card-body">
+                <div class="d-flex flex-wrap justify-content-between gap-2">
+                  <h3 class="h5 fw-semibold mb-0">Vice President, Student Sustainability — GCSA</h3>
+                  <span class="text-muted-app small">2024 – Present · Georgian College</span>
+                </div>
+                <ul class="text-muted-app mt-3 mb-0">
+                  <li>Plan and coordinate student-facing initiatives aligned with institutional goals</li>
+                  <li>Collaborate with cross-department stakeholders on program planning and reporting</li>
+                  <li>Support governance processes, presentations, and written communications</li>
+                  <li>Lead execution of sustainability programs across campus services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="card card-app experience-card">
+
+              <div class="card-body">
+                <div class="d-flex flex-wrap justify-content-between gap-2">
+                  <h3 class="h5 fw-semibold mb-0">Computer Sales Associate — Best Buy</h3>
+                  <span class="text-muted-app small">Jun 2023 – Dec 2023</span>
+                </div>
+                <ul class="text-muted-app mt-3 mb-0">
+                  <li>Provided technical guidance to users on computing devices and software tools</li>
+                  <li>Diagnosed needs and recommended appropriate technology solutions</li>
+                  <li>Supported troubleshooting of basic technical issues and product setup</li>
+                  <li>Delivered customer-facing support in a fast-paced environment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container py-5">
+        <div class="reveal mb-4">
+          <h2 class="h1 fw-bold mb-1">Education</h2>
+          <p class="text-muted-app mb-0">Computer Programming & Analysis (CMPA) — Georgian College</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="card card-app reveal">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-2">Computer Programming & Analysis (CMPA)</h3>
+                <p class="text-muted-app mb-2">Georgian College · Barrie, ON</p>
+                <ul class="text-muted-app mb-0">
+                  <li>Dean’s List (90%)</li>
+                  <li>Focus: web development, databases, application support, and automation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-2">Currently building</h3>
+                <p class="text-muted-app mb-0">
+                  This portfolio (Project A) — performance-first UI with professional micro-animations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="pt-5 text-center text-muted-app small">
+          © <span id="year"></span> Gunn (Gunratan Kaur). Built with HTML, Bootstrap, CSS & JavaScript.
+        </footer>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container py-5">
+        <div class="reveal mb-4">
+          <h2 class="h1 fw-bold mb-1">Contact</h2>
+          <p class="text-muted-app mb-0">Placeholders for now — replace when ready.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3">Let’s connect</h3>
+
+                <div class="d-flex flex-column gap-2">
+                  <a class="contact-link" href="#" aria-label="Email placeholder">
+                    <i class="bi bi-envelope me-2"></i> Email:
+                    <span class="text-muted-app ms-1">your.email@example.com</span>
+                  </a>
+                  <a class="contact-link" href="#" aria-label="LinkedIn placeholder">
+                    <i class="bi bi-linkedin me-2"></i> LinkedIn:
+                    <span class="text-muted-app ms-1">linkedin.com/in/your-handle</span>
+                  </a>
+                  <a class="contact-link" href="#" aria-label="GitHub placeholder">
+                    <i class="bi bi-github me-2"></i> GitHub:
+                    <span class="text-muted-app ms-1">github.com/your-username</span>
+                  </a>
+                </div>
+
+                <hr class="border-app my-4" />
+
+                <p class="text-muted-app small mb-0">
+                  Tip: Email + LinkedIn is usually enough. Add phone only if you want it public.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card card-app reveal h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3">Fast notes</h3>
+                <ul class="text-muted-app mb-0">
+                  <li>Single-page, responsive layout</li>
+                  <li>Neutral background to keep visuals clean</li>
+                  <li>Scroll reveal + typing effect</li>
+                  <li>Project filters + modal details</li>
+                  <li>Optimized for GitHub Pages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-app">
+          <div class="modal-header border-app">
+            <div>
+              <h5 class="modal-title fw-semibold" id="modalTitle">Project Title</h5>
+              <p class="text-muted-app small mb-0" id="modalSubtitle">Subtitle</p>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="mb-3">
+              <div class="small text-muted-app mb-1">Tech</div>
+              <div id="modalTech" class="text-app"></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="small text-muted-app mb-1">What I built</div>
+              <ul id="modalBullets" class="text-muted-app mb-0"></ul>
+            </div>
+
+            <div class="mb-3">
+              <div class="small text-muted-app mb-1">Notes</div>
+              <div id="modalNotes" class="text-muted-app"></div>
+            </div>
+          </div>
+
+          <div class="modal-footer border-app">
+            <a id="modalGithub" class="btn btn-outline-light" href="#" target="_blank" rel="noreferrer">
+              <i class="bi bi-github me-2"></i>GitHub
+            </a>
+            <a id="modalLive" class="btn btn-accent" href="#" target="_blank" rel="noreferrer">
+              <i class="bi bi-box-arrow-up-right me-2"></i>Live / Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
