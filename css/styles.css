@@ -18,6 +18,17 @@ body.bg-app{
 .text-app{ color: var(--text); }
 .text-muted-app{ color: var(--muted); }
 .border-app{ border-color: var(--border) !important; }
+h1, h2, h3, h4, h5{
+  color: var(--text) !important;
+  opacity: 1 !important;
+}
+
+.text-muted-app h1,
+.text-muted-app h2,
+.text-muted-app h3{
+  color: var(--text) !important;
+  opacity: 1 !important;
+}
 
 .section{ scroll-margin-top: 90px; }
 
@@ -230,11 +241,11 @@ body.bg-app{
   outline-offset: 2px;
 }
 
-/* Optional: make bullet list pop slightly */
+
 .experience-card:hover li{
   color: rgba(255,255,255,.82);
 }
-h1, h2, h3 { opacity: 1 !important; }
+
 /* Reduce motion support */
 @media (prefers-reduced-motion: reduce){
   .experience-card,
