@@ -234,7 +234,7 @@ body.bg-app{
 .experience-card:hover li{
   color: rgba(255,255,255,.82);
 }
-
+h1, h2, h3 { opacity: 1 !important; }
 /* Reduce motion support */
 @media (prefers-reduced-motion: reduce){
   .experience-card,
