@@ -138,8 +138,11 @@ setButtonState(liveBtn, live.startsWith("http") ? live : "");
 
 /* Keyboard accessibility: Enter opens modal */
 projectCards.forEach((card) => {
-  card.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") card.click();
+  card.addEventListener("click", (e) => {
+    if (e.target.closest("a")) {
+      e.stopPropagation();
+      return;
+    }
   });
 });
 document.querySelectorAll(".experience-card").forEach((card) => {
