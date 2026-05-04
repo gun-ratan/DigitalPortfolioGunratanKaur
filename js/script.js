@@ -119,7 +119,14 @@ if (modal) {
     document.getElementById("modalSubtitle").textContent = subtitle;
     document.getElementById("modalTech").textContent = tech;
     document.getElementById("modalNotes").textContent = notes;
+    document.getElementById("modalGithub").addEventListener("click", function(e) 
+      {
+     e.stopPropagation();
+         });
 
+document.getElementById("modalLive").addEventListener("click", function(e) {
+  e.stopPropagation();
+});
     const ul = document.getElementById("modalBullets");
     ul.innerHTML = "";
     bullets.forEach((b) => {
