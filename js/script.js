@@ -20,19 +20,26 @@ const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
 /* Scroll reveal */
+/* Scroll reveal */
 const revealEls = Array.from(document.querySelectorAll(".reveal"));
-const io = new IntersectionObserver(
-  (entries) => {
-    for (const e of entries) {
-      if (e.isIntersecting) {
-        e.target.classList.add("in");
-        io.unobserve(e.target);
+
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
       }
-    }
-  },
-  { threshold: 0.12 }
-);
-revealEls.forEach((el) => io.observe(el));
+    },
+    { threshold: 0.12 }
+  );
+
+  revealEls.forEach((el) => io.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add("in"));
+}
 
 /* Active nav link highlight */
 const sections = Array.from(document.querySelectorAll("section.section, header.section"));
