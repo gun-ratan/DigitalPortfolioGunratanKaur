@@ -245,6 +245,10 @@ h1, h2, h3, h4, h5{
 .experience-card:hover li{
   color: rgba(255,255,255,.82);
 }
+.reveal {
+  opacity: 1;
+  transform: none;
+}
 
 /* Reduce motion support */
 @media (prefers-reduced-motion: reduce){
