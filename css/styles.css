@@ -176,15 +176,9 @@ h1, h2, h3, h4, h5{
   background: rgba(255,255,255,.02);
 }
 
-.reveal{
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity .55s ease, transform .55s ease;
-  will-change: opacity, transform;
-}
-.reveal.in{
+.reveal {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* Timeline */
