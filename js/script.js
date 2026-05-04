@@ -77,10 +77,20 @@ filterButtons.forEach((btn) => {
 /* Project modal buttons */
 function setButtonState(btn, url) {
   const hasUrl = Boolean(url && url.trim().length > 0);
-  btn.classList.toggle("disabled", !hasUrl);
-  btn.setAttribute("aria-disabled", String(!hasUrl));
-  btn.href = hasUrl ? url : "#";
-  btn.tabIndex = hasUrl ? 0 : -1;
+
+  if (hasUrl) {
+    btn.style.display = "inline-block";
+    btn.href = url;
+    btn.removeAttribute("aria-disabled");
+    btn.classList.remove("disabled");
+    btn.tabIndex = 0;
+  } else {
+    btn.style.display = "none";
+    btn.href = "#";
+    btn.setAttribute("aria-disabled", "true");
+    btn.classList.add("disabled");
+    btn.tabIndex = -1;
+  }
 }
 
 /* Project modal population */
@@ -115,9 +125,8 @@ if (modal) {
     const liveBtn = document.getElementById("modalLive");
 
     // disable if empty OR placeholder text
-    setButtonState(githubBtn, github && !github.includes("placeholder") ? github : "");
-    setButtonState(liveBtn, live && !live.includes("placeholder") && !live.includes("optional") ? live : "");
-  });
+    setButtonState(githubBtn, github.startsWith("http") ? github : "");
+setButtonState(liveBtn, live.startsWith("http") ? live : "");
 }
 
 /* Keyboard accessibility: Enter opens modal */
